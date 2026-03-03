@@ -70,14 +70,6 @@ $$
 \hat{y} = \theta_0 + \theta_1 x
 $$
 
-### Cost (Mean Squared Error)
-
-$$
-J(\theta_0, \theta_1)
-=
-\frac{1}{2m} \sum_{i=1}^{m}
-\left( \theta_0 + \theta_1 x^{(i)} - y^{(i)} \right)^2
-$$
 
 ### Gradient Descent Updates
 
@@ -90,6 +82,20 @@ $$
 \theta_1 := \theta_1 - \alpha\, \frac{1}{m} \sum_{i=1}^{m}
 \left( \theta_0 + \theta_1 x^{(i)} - y^{(i)} \right) x^{(i)}
 $$
+
+### Cost (Mean Squared Error)
+
+
+$$
+J(\theta_0, \theta_1)=
+$$
+
+$$
+\frac{1}{2m} \sum_{i=1}^{m}
+\left( \theta_0 + \theta_1 x^{(i)} - y^{(i)} \right)^2
+$$
+
+
 
 > **Rendering tips (GitHub):** Ensure there is a **blank line before and after** each `$$` block; do **not** put any other text on the same line as `$$`.
 
