@@ -77,6 +77,7 @@ pip install numpy pandas matplotlib scikit-learn
 
 ## 🧮 Modeling Details
 
+
 ### Model
 We use **1‑variable linear regression**:
 
@@ -88,7 +89,16 @@ $$
 - \( y \): `dollar_price` (Big Mac price, USD)
 
 ### Cost (MSE with ½ factor)
-\[ J(\theta_0,\theta_1) = \frac{1}{2m}\sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2 \]
+The cost function is:
+
+$$
+J(\theta_0, \theta_1)
+=
+\frac{1}{2m} \sum_{i=1}^{m}
+\left( \theta_0 + \theta_1 x^{(i)} - y^{(i)} \right)^2
+$$
+
+
 
 ### Gradient Descent updates
 \[
