@@ -79,7 +79,11 @@ pip install numpy pandas matplotlib scikit-learn
 
 ### Model
 We use **1‑variable linear regression**:
-\[ \hat{y} = \theta_0 + \theta_1 x \]
+
+$$
+\hat{y} = \theta_0 + \theta_1 x
+$$
+
 - \( x \): `GDP_bigmac` (GDP per capita in USD)  
 - \( y \): `dollar_price` (Big Mac price, USD)
 
